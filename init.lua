@@ -547,6 +547,17 @@ require("lazy").setup({
 			-- used for completion, annotations and signatures of Neovim apis
 			{ "folke/neodev.nvim", opts = {} },
 		},
+		opts = {
+			diagnostics = {
+				update_in_insert = true,
+			},
+			inlay_hints = {
+				enabled = true,
+			},
+			codelens = {
+				enabled = true,
+			},
+		},
 		config = function()
 			-- Brief aside: **What is LSP?**
 			--
